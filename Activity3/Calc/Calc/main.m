@@ -18,17 +18,17 @@ int main(int argc, const char * argv[]) {
         [deskCalc divide: 15.0];
         [deskCalc subtract: 10.0];
         [deskCalc multiply: 5];
-		NSLog (@"The result is %g", [deskCalc accumulator]);
-		[deskCalc clear];
+        NSLog (@"The result is %g", [deskCalc accumulator]);
+        [deskCalc clear];
 		
         //Now add statements to the main program to calculate the expression (3.14159 * 4.0 * 4.0 -  150.75) / 34.6
-         [deskCalc setAccumulator:3.14159];
-         [deskCalc multiply:4.0];
-         [deskCalc multiply:4.0];
-         [deskCalc subtract:150.75];
-         [deskCalc divide:34.6];
+        [deskCalc setAccumulator:3.14159];
+        [deskCalc multiply:4.0];
+        [deskCalc multiply:4.0];
+        [deskCalc subtract:150.75];
+        [deskCalc divide:34.6];
         NSLog (@"The result is %g", [deskCalc accumulator]);
-
+        
     }
     return 0;
 }
