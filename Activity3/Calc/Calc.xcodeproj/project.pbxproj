@@ -10,6 +10,7 @@
 		E3E156E91A5ED84000A5F4CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E156E81A5ED84000A5F4CF /* Foundation.framework */; };
 		E3E156EC1A5ED84000A5F4CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E156EB1A5ED84000A5F4CF /* main.m */; };
 		E3E156F01A5ED84000A5F4CF /* Calc.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = E3E156EF1A5ED84000A5F4CF /* Calc.1 */; };
+		E3E156F81A5EE09C00A5F4CF /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E156F71A5EE09C00A5F4CF /* Calculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		E3E156EB1A5ED84000A5F4CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; usesTabs = 1; };
 		E3E156EE1A5ED84000A5F4CF /* Calc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Calc-Prefix.pch"; sourceTree = "<group>"; };
 		E3E156EF1A5ED84000A5F4CF /* Calc.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Calc.1; sourceTree = "<group>"; };
+		E3E156F61A5EE09C00A5F4CF /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		E3E156F71A5EE09C00A5F4CF /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 		E3E156EA1A5ED84000A5F4CF /* Calc */ = {
 			isa = PBXGroup;
 			children = (
+				E3E156F61A5EE09C00A5F4CF /* Calculator.h */,
+				E3E156F71A5EE09C00A5F4CF /* Calculator.m */,
 				E3E156EB1A5ED84000A5F4CF /* main.m */,
 				E3E156EF1A5ED84000A5F4CF /* Calc.1 */,
 				E3E156ED1A5ED84000A5F4CF /* Supporting Files */,
@@ -140,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3E156EC1A5ED84000A5F4CF /* main.m in Sources */,
+				E3E156F81A5EE09C00A5F4CF /* Calculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
