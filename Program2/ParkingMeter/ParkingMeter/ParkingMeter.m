@@ -13,6 +13,8 @@
 @synthesize cash, nickels, dimes, quarters, time;
 
 -(bool) insertNickels: (int) num    {
+    if(time + 10 * num > 90)
+        return false;
     nickels += num;
     time += 10 * num;
     cash += .05 * num;
@@ -20,6 +22,8 @@
 }
 
 -(bool) insertDimes: (int) num  {
+    if(time + 20 * num > 90)
+        return false;
     dimes += num;
     time += 20 * num;
     cash += .1 * num;
@@ -27,6 +31,8 @@
 }
 
 -(bool) insertQuarters: (int) num   {
+    if(time + 60 * num > 90)
+        return false;
     quarters += num;
     time += 60 * num;
     cash += .25 * num;
@@ -40,7 +46,7 @@
 }
 
 -(void) print   {
-    printf("\tYou've inserted $%.2f and have %d remaining minutes.\n", (nickels * .05 + dimes * .1 + quarters * .25), time);
+    printf("\tYou've inserted $%.2f\n\tYou have %d remaining minutes.\n\tThere is $%.2f currently in the machine\n\n", (nickels * .05 + dimes * .1 + quarters * .25), time, cash);
 }
 
 -(bool) timePasses: (int) minutes   {
