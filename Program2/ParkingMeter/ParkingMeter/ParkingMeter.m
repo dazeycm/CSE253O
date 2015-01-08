@@ -53,8 +53,8 @@
 //  Returns true if there is still time on the meter, and false otherwise
 -(bool) timePasses: (int) minutes   {
     time -= minutes;
-    if(minutes < 0) {
-        minutes = 0;
+    if(time < 0) {
+        time = 0;
         return false;
     }
     else
