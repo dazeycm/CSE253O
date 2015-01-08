@@ -29,7 +29,7 @@
 /* Begin PBXFileReference section */
 		E3E156E51A5ED84000A5F4CF /* Calc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Calc; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E156E81A5ED84000A5F4CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		E3E156EB1A5ED84000A5F4CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; usesTabs = 1; };
+		E3E156EB1A5ED84000A5F4CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; usesTabs = 0; };
 		E3E156EE1A5ED84000A5F4CF /* Calc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Calc-Prefix.pch"; sourceTree = "<group>"; };
 		E3E156EF1A5ED84000A5F4CF /* Calc.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Calc.1; sourceTree = "<group>"; };
 		E3E156F61A5EE09C00A5F4CF /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
