@@ -10,7 +10,7 @@
 
 @implementation Bank
 
-@synthesize balance;
+@synthesize balance, accNum, name;
 
 -(bool) withdraw: (float)amt    {
     if(amt > balance)
@@ -23,6 +23,14 @@
 -(bool) deposit: (float)amt {
     balance += amt;
     return true;
+}
+
+-(void) print   {
+    printf("Name: %s\nAccount number: %d\nBalance: %.2f\n", [name UTF8String], accNum, balance);
+}
+
++(int) addX: (int)num to: (int)num2   {
+    return num + num2;
 }
 
 @end

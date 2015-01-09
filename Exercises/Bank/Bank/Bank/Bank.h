@@ -11,8 +11,12 @@
 @interface Bank : NSObject
 
 @property float balance;
+@property NSString *name;
+@property int accNum;
 
 -(bool) withdraw: (float)amt;
 -(bool) deposit: (float)amt;
+-(void) print;
++(int) addX: (int)num to: (int)num2;
 
 @end
