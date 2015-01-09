@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Dazey, Craig Michael Jr. All rights reserved.
 //
 //  TODO: If time > 90 set time to 90
+#import <Foundation/Foundation.h>
 #import "ParkingMeter.h"
 
 @implementation ParkingMeter
@@ -15,8 +16,6 @@
 
 //  Returns false if time would exceed 90 minutes, and true otherwise
 -(bool) insertNickels: (int) num    {
-    if(time + 10 * num > 90)
-        return false;
     nickels += num;
     time += 10 * num;
     cash += .05 * num;
@@ -24,8 +23,6 @@
 }
 
 -(bool) insertDimes: (int) num  {
-    if(time + 20 * num > 90)
-        return false;
     dimes += num;
     time += 20 * num;
     cash += .1 * num;
@@ -33,8 +30,6 @@
 }
 
 -(bool) insertQuarters: (int) num   {
-    if(time + 60 * num > 90)
-        return false;
     quarters += num;
     time += 60 * num;
     cash += .25 * num;

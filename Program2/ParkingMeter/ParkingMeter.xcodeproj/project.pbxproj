@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		E3229BF41A5F1BD600471FA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3229BF31A5F1BD600471FA1 /* Foundation.framework */; };
 		E3229BFB1A5F1BD600471FA1 /* ParkingMeter.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = E3229BFA1A5F1BD600471FA1 /* ParkingMeter.1 */; };
-		E3229C021A5F1C1200471FA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3229C011A5F1C1200471FA1 /* main.m */; };
 		E3229C061A5F1CAF00471FA1 /* ParkingMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = E3229C051A5F1CAF00471FA1 /* ParkingMeter.m */; };
+		E326A23B1A603D0700AEB876 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E326A23A1A603D0700AEB876 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,9 +31,9 @@
 		E3229BF31A5F1BD600471FA1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E3229BF91A5F1BD600471FA1 /* ParkingMeter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParkingMeter-Prefix.pch"; sourceTree = "<group>"; };
 		E3229BFA1A5F1BD600471FA1 /* ParkingMeter.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ParkingMeter.1; sourceTree = "<group>"; };
-		E3229C011A5F1C1200471FA1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../../../../Downloads/main.m; sourceTree = "<group>"; };
-		E3229C031A5F1C5000471FA1 /* ParkingMeter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ParkingMeter.h; path = ../../../../../Downloads/ParkingMeter.h; sourceTree = "<group>"; };
 		E3229C051A5F1CAF00471FA1 /* ParkingMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkingMeter.m; sourceTree = "<group>"; };
+		E326A2381A603CF000AEB876 /* ParkingMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingMeter.h; sourceTree = "<group>"; };
+		E326A23A1A603D0700AEB876 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +76,9 @@
 		E3229BF51A5F1BD600471FA1 /* ParkingMeter */ = {
 			isa = PBXGroup;
 			children = (
+				E326A23A1A603D0700AEB876 /* main.m */,
+				E326A2381A603CF000AEB876 /* ParkingMeter.h */,
 				E3229C051A5F1CAF00471FA1 /* ParkingMeter.m */,
-				E3229C031A5F1C5000471FA1 /* ParkingMeter.h */,
-				E3229C011A5F1C1200471FA1 /* main.m */,
 				E3229BFA1A5F1BD600471FA1 /* ParkingMeter.1 */,
 				E3229BF81A5F1BD600471FA1 /* Supporting Files */,
 			);
@@ -144,8 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E326A23B1A603D0700AEB876 /* main.m in Sources */,
 				E3229C061A5F1CAF00471FA1 /* ParkingMeter.m in Sources */,
-				E3229C021A5F1C1200471FA1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
