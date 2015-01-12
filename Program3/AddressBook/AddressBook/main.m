@@ -8,16 +8,29 @@
 
 #import <Foundation/Foundation.h>
 
-NSMutableDictionary *inputData()    {
-    NSMutableDictionary *myDict;
-    return myDict;
+NSMutableDictionary* myDict;
+
+void initDict()    { //TODO: Read stuff in from a file
+    FILE *file;
+    file = fopen("/Users/dazeycm/Desktop/CSE253O/Program3/AddressBook/AddressBook/data.txt", "r");
+    if(file == NULL)
+        printf("It fucked up");
+    myDict = [[NSMutableDictionary alloc]init];
 }
 
-void findData(NSMutableDictionary *dict) { //TODO: Check to see if name is in dictionary
+void findData() { //TODO: Check to see if name is in dictionary
     printf("Enter a name: ");
     char name[20];
     scanf("%s", name);
     printf("***********************************************************\n\t\tEmail address: PUT SOMETHING HERE\n\t\tTelephone Number: PUT SOMETHING HERE\n***********************************************************\n");
+    
+}
+
+bool addAddressData()  { //TODO: Add address to dictionary
+    return true;
+}
+
+void editData()    { //TODO: Everything pretty much
     
 }
 
@@ -26,7 +39,7 @@ int main(int argc, const char * argv[])
 
     @autoreleasepool {
         int choice;
-        NSMutableDictionary *myDict = inputData();
+        initDict();
         do{
             printf("Address Book\n");
             printf("1. Find address data\n2. Add address data\n3. Edit address data\n4. Quit\n");
@@ -34,13 +47,16 @@ int main(int argc, const char * argv[])
             scanf("%d", &choice);
             switch(choice)  {
                 case 1:
-                    findData(myDict);
+                    findData();
                     break;
                 case 2:
+                    addAddressData();
                     break;
                 case 3:
+                    editData();
                     break;
                 case 4:
+                    printf("Adios!");
                     break;
                 default:
                     printf("Invalid input!");

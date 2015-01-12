@@ -34,6 +34,7 @@
 		E3E7D1EC1A642E6300893573 /* AddressBook.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = AddressBook.1; sourceTree = "<group>"; };
 		E3E7D1F31A64329300893573 /* AddressData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressData.h; sourceTree = "<group>"; };
 		E3E7D1F41A64329300893573 /* AddressData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressData.m; sourceTree = "<group>"; };
+		E3E7D1F61A643CB600893573 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +77,7 @@
 		E3E7D1E71A642E6300893573 /* AddressBook */ = {
 			isa = PBXGroup;
 			children = (
+				E3E7D1F61A643CB600893573 /* data.txt */,
 				E3E7D1F31A64329300893573 /* AddressData.h */,
 				E3E7D1F41A64329300893573 /* AddressData.m */,
 				E3E7D1E81A642E6300893573 /* main.m */,
