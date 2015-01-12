@@ -8,12 +8,25 @@
 
 #import <Foundation/Foundation.h>
 
+NSMutableDictionary *inputData()    {
+    NSMutableDictionary *myDict;
+    return myDict;
+}
+
+void findData(NSMutableDictionary *dict) { //TODO: Check to see if name is in dictionary
+    printf("Enter a name: ");
+    char name[20];
+    scanf("%s", name);
+    printf("***********************************************************\n\t\tEmail address: PUT SOMETHING HERE\n\t\tTelephone Number: PUT SOMETHING HERE\n***********************************************************\n");
+    
+}
+
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
         int choice;
-        NSMutableDictionary *myDict;
+        NSMutableDictionary *myDict = inputData();
         do{
             printf("Address Book\n");
             printf("1. Find address data\n2. Add address data\n3. Edit address data\n4. Quit\n");
@@ -21,6 +34,7 @@ int main(int argc, const char * argv[])
             scanf("%d", &choice);
             switch(choice)  {
                 case 1:
+                    findData(myDict);
                     break;
                 case 2:
                     break;
