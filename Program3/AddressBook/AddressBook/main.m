@@ -5,8 +5,10 @@
 //  Created by Dazey, Craig Michael Jr. on 1/12/15.
 //  Copyright (c) 2015 Dazey, Craig Michael Jr. All rights reserved.
 //
+//  Purpose: Practice using ObjC container classes to develop an address book
 
 #import <Foundation/Foundation.h>
+#import "AddressData.h"
 
 NSMutableDictionary* myDict;
 
@@ -14,7 +16,7 @@ void initDict()    { //TODO: Read stuff in from a file
     FILE *file;
     file = fopen("/Users/dazeycm/Desktop/CSE253O/Program3/AddressBook/AddressBook/data.txt", "r");
     if(file == NULL)
-        printf("It fucked up");
+        printf("It didn't work");
     myDict = [[NSMutableDictionary alloc]init];
 }
 
