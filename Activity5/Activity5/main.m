@@ -29,7 +29,30 @@ int main(int argc, const char * argv[])
         printf("Enter a string: ");
         scanf("%s", cString);
         NSString* objcString = [NSString stringWithUTF8String: cString];
+        
         printf("Length of string:  %d\n", (int)[objcString length]);
+        
+        NSString* capsString = [objcString uppercaseString];
+        printf("%s\n", [capsString UTF8String]);
+        
+        int count = 0;
+        for(int i = 0; i < [capsString length]; i++)    {
+            char curChar = [capsString characterAtIndex:i];
+            if (curChar == 'A' || curChar == 'E' || curChar == 'I' || curChar == 'O' || curChar == 'U')
+                count++;
+        }
+        printf("Found %d vowels\n", count);
+        
+        printf("Enter a name: ");
+        char str[20];
+        fgets(str, 20, stdin);
+        fgets(str, 20, stdin);
+        NSString* newStr = [NSString stringWithUTF8String:str];
+        NSArray* parts = [newStr componentsSeparatedByString:@" "];
+        NSString* lastName = [parts objectAtIndex:1];
+        printf("Last name: %s", [lastName UTF8String]);
+        
+        
     }
     return 0;
 }
