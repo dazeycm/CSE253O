@@ -12,12 +12,30 @@
 
 NSMutableDictionary* myDict;
 
-void initDict()    { //TODO: Read stuff in from a file
+void initDict()    {
     FILE *file;
-    file = fopen("/Users/dazeycm/Desktop/CSE253O/Program3/AddressBook/AddressBook/data.txt", "r");
-    if(file == NULL)
-        printf("It didn't work");
     myDict = [[NSMutableDictionary alloc]init];
+    file = fopen("/Users/dazeycm/Desktop/CSE253O/Program3/AddressBook/AddressBook/data.txt", "r");
+    if(file == NULL)    {
+        printf("Failed to open file");
+        return;
+    }
+    
+    char str[80];
+    while (!feof(file))  {
+        fgets(str, 80, file);
+        
+        //split the input string on ","
+        NSArray* parts = [[NSString stringWithUTF8String: str] componentsSeparatedByString:@","];
+        AddressData* data = [[AddressData alloc]init];
+        
+        NSString* name = [parts objectAtIndex:0];
+        [data setEmail: [parts objectAtIndex:1] andPhone: [parts objectAtIndex:2]];
+        [myDict setObject:data forKey:name];
+    }
+    for(NSString* key in myDict) {
+        NSLog(@"%@\n%@", key, [myDict objectForKey:key]);
+    }
 }
 
 void findData() { //TODO: Check to see if name is in dictionary

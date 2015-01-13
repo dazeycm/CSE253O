@@ -1,1 +1,4 @@
-Hello World
+Craig Dazey,craigdazey@gmail.com,419-618-5326
+Bob Ross,bobR@hotmail.com,123-456-7890
+Miley Cyrus,pyscho@yahoo.com,987-654-3210
+Boo Riley,briles@gmail.com,111-111-1111

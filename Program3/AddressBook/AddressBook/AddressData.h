@@ -12,4 +12,6 @@
 
 @property NSString *email, *phone;
 
+-(void) setEmail: (NSString*) newEmail andPhone: (NSString*) newPhone;
+
 @end

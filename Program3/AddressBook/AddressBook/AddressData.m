@@ -12,4 +12,13 @@
 
 @synthesize email, phone;
 
+-(void) setEmail: (NSString*) newEmail andPhone: (NSString*) newPhone   {
+    email = newEmail;
+    phone = newPhone;
+}
+
+-(NSString*) description    {
+    return [NSString stringWithFormat:@"Email: %@\nPhone: %@\n", email, phone];
+}
+
 @end
