@@ -33,6 +33,7 @@ void initDict()    {
         [data setEmail: [parts objectAtIndex:1] andPhone: [parts objectAtIndex:2]];
         [myDict setObject:data forKey:name];
     }
+    
     for(NSString* key in myDict) {
         NSLog(@"%@\n%@", key, [myDict objectForKey:key]);
     }
@@ -41,7 +42,13 @@ void initDict()    {
 void findData() { //TODO: Check to see if name is in dictionary
     printf("Enter a name: ");
     char name[20];
-    scanf("%s", name);
+    fgets(name, 20, stdin);
+    if ([myDict objectForKey: [NSString stringWithUTF8String:name]] != nil)  {
+        printf("IT WORKED JESUS");
+    }
+    else    {
+        printf("Error: User not found");
+    }
     printf("***********************************************************\n\t\tEmail address: PUT SOMETHING HERE\n\t\tTelephone Number: PUT SOMETHING HERE\n***********************************************************\n");
     
 }
@@ -58,13 +65,15 @@ int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
-        int choice;
         initDict();
+        int choice;
         do{
             printf("Address Book\n");
             printf("1. Find address data\n2. Add address data\n3. Edit address data\n4. Quit\n");
             printf("Enter your choice: ");
-            scanf("%d", &choice);
+            char number[50];
+            fgets(number, 50, stdin);
+            choice = atoi(number);
             switch(choice)  {
                 case 1:
                     findData();
@@ -79,7 +88,7 @@ int main(int argc, const char * argv[])
                     printf("Adios!");
                     break;
                 default:
-                    printf("Invalid input!");
+                    printf("Invalid input!\n");
             }
         } while(choice != 4);
         
