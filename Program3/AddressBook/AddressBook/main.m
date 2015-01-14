@@ -30,7 +30,11 @@ void initDict()    {
         AddressData* data = [[AddressData alloc]init];
         
         NSString* name = [parts objectAtIndex:0];
-        [data setEmail: [parts objectAtIndex:1] andPhone: [parts objectAtIndex:2]];
+        NSString* email = [parts objectAtIndex:1];
+        NSString* tele = [parts objectAtIndex:2];
+        tele = [tele stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+        
+        [data setEmail: email andPhone: tele];
         [myDict setObject:data forKey:name];
     }
     
@@ -42,15 +46,18 @@ void initDict()    {
 void findData() { //TODO: Check to see if name is in dictionary
     printf("Enter a name: ");
     char name[20];
-    fgets(name, 20, stdin);    //Try changing this to @"Craig Dazey", if it works then the string read in is the problem
+    fgets(name, 20, stdin);
+    long i = strlen(name)-1;
+    if( name[i] == '\n')
+        name[i] = '\0';
+    
     if ([myDict objectForKey:[NSString stringWithUTF8String:name]])  {
-        printf("IT WORKED JESUS");
+        AddressData* data = [myDict objectForKey:[NSString stringWithUTF8String:name]];
+        printf("***********************************************************\n\t\tEmail address: %s\n\t\tTelephone Number: %s\n***********************************************************\n", [[data email] UTF8String], [[data phone] UTF8String]);
     }
     else    {
         printf("Error: User not found");
     }
-    printf("***********************************************************\n\t\tEmail address: PUT SOMETHING HERE\n\t\tTelephone Number: PUT SOMETHING HERE\n***********************************************************\n");
-    
 }
 
 bool addAddressData()  { //TODO: Add address to dictionary
