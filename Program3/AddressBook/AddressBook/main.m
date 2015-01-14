@@ -46,13 +46,9 @@ void initDict()    {
         [data setEmail: email andPhone: tele];
         [myDict setObject:data forKey:name];
     }
-    
-//    for(NSString* key in myDict) {
-//        NSLog(@"%@\n%@", key, [myDict objectForKey:key]);
-//    }
 }
 
-void findData() { //TODO: Check to see if name is in dictionary
+void findData() {
     printf("Enter a name: ");
     char userName[20];
     fgets(userName, 20, stdin);
@@ -67,15 +63,15 @@ void findData() { //TODO: Check to see if name is in dictionary
     }
 }
 
-bool addAddressData()  { //TODO: Add address to dictionary
+void addAddressData()  {
     printf("Enter a name: ");
     char userName[20];
     fgets(userName, 20, stdin);
     NSString* name = removeNewLine([NSString stringWithUTF8String:userName]);
     
     if ([myDict objectForKey:name]) {
-        printf("Name already exists in dictionary.");
-        return false;
+        printf("Error: Name in address book!\n");
+        return;
     }
     
     printf("Enter an email: ");
@@ -92,8 +88,6 @@ bool addAddressData()  { //TODO: Add address to dictionary
     [dataForDict setEmail:email andPhone:tele];
     
     [myDict setObject:dataForDict forKey:name];
-    
-    return true;
 }
 
 void editData()    { //TODO: Everything pretty much
