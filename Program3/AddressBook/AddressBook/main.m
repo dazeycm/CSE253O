@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Dazey, Craig Michael Jr. All rights reserved.
 //
 //  Purpose: Practice using ObjC container classes to develop an address book
+//
 //  Below you'll see a removeNewLine function I made to take care of the new line problem when using fgets
 //  However, I think it's easier to convert the user input into an NSString first (which I'd do anyways to store it in the addressdata)
 //  and then you can use replace method of NSString which is stringByReplacingOccurenceOfString: withString which is a lot nicer I think
@@ -36,7 +37,7 @@ void initDict()    {
     }
     
     char str[80];
-    while (!feof(file))  {
+    while (!feof(file))  {  //Check end of file
         fgets(str, 80, file);
         
         //split the input string on ","
