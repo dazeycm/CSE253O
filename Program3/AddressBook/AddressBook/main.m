@@ -42,7 +42,7 @@ void initDict()    {
 void findData() { //TODO: Check to see if name is in dictionary
     printf("Enter a name: ");
     char name[20];
-    fgets(name, 20, stdin);
+    fgets(name, 20, stdin);    //Try changing this to @"Craig Dazey", if it works then the string read in is the problem
     if ([myDict objectForKey:[NSString stringWithUTF8String:name]])  {
         printf("IT WORKED JESUS");
     }
