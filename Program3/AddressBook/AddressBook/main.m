@@ -75,8 +75,8 @@ void addAddressData()  {
     }
     
     printf("Enter an email: ");
-    char userEmail[20];
-    fgets(userEmail, 20, stdin);
+    char userEmail[50];
+    fgets(userEmail, 50, stdin);
     NSString* email = removeNewLine([NSString stringWithUTF8String:userEmail]);
     
     printf("Enter a telephone: ");
@@ -91,6 +91,30 @@ void addAddressData()  {
 }
 
 void editData()    { //TODO: Everything pretty much
+    printf("Enter a name: ");
+    char userName[20];
+    fgets(userName, 20, stdin);
+    NSString* name = removeNewLine([NSString stringWithUTF8String:userName]);
+    
+    if ([myDict objectForKey:name]) {
+        printf("Enter an email: ");
+        char userEmail[50];
+        fgets(userEmail, 50, stdin);
+        NSString* email = removeNewLine([NSString stringWithUTF8String:userEmail]);
+        
+        printf("Enter a telephone: ");
+        char userTele[20];
+        fgets(userTele, 20, stdin);
+        NSString* tele = removeNewLine([NSString stringWithUTF8String:userTele]);
+        
+        AddressData* dataForDict  = [[AddressData alloc]init];
+        [dataForDict setEmail:email andPhone:tele];
+        
+        [myDict removeObjectForKey:name];
+        [myDict setObject:dataForDict forKey:name];
+    }
+    else
+        printf("Error: Name not found!");
     
 }
 
