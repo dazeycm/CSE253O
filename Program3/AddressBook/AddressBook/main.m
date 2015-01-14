@@ -12,6 +12,15 @@
 
 NSMutableDictionary* myDict;
 
+NSString* removeNewLine(NSString* input)   {
+    char* str = (char*)[input UTF8String];
+    long i = strlen(str)-1;
+    if( str[i] == '\n')
+        str[i] = '\0';
+    input = [NSString stringWithUTF8String:str];
+    return input;
+}
+
 void initDict()    {
     FILE *file;
     myDict = [[NSMutableDictionary alloc]init];
@@ -38,29 +47,52 @@ void initDict()    {
         [myDict setObject:data forKey:name];
     }
     
-    for(NSString* key in myDict) {
-        NSLog(@"%@\n%@", key, [myDict objectForKey:key]);
-    }
+//    for(NSString* key in myDict) {
+//        NSLog(@"%@\n%@", key, [myDict objectForKey:key]);
+//    }
 }
 
 void findData() { //TODO: Check to see if name is in dictionary
     printf("Enter a name: ");
-    char name[20];
-    fgets(name, 20, stdin);
-    long i = strlen(name)-1;
-    if( name[i] == '\n')
-        name[i] = '\0';
+    char userName[20];
+    fgets(userName, 20, stdin);
+    NSString* name = removeNewLine([NSString stringWithUTF8String:userName]);
     
-    if ([myDict objectForKey:[NSString stringWithUTF8String:name]])  {
-        AddressData* data = [myDict objectForKey:[NSString stringWithUTF8String:name]];
+    if ([myDict objectForKey:name])  {
+        AddressData* data = [myDict objectForKey:name];
         printf("***********************************************************\n\t\tEmail address: %s\n\t\tTelephone Number: %s\n***********************************************************\n", [[data email] UTF8String], [[data phone] UTF8String]);
     }
     else    {
-        printf("Error: User not found");
+        printf("Error: User not found\n");
     }
 }
 
 bool addAddressData()  { //TODO: Add address to dictionary
+    printf("Enter a name: ");
+    char userName[20];
+    fgets(userName, 20, stdin);
+    NSString* name = removeNewLine([NSString stringWithUTF8String:userName]);
+    
+    if ([myDict objectForKey:name]) {
+        printf("Name already exists in dictionary.");
+        return false;
+    }
+    
+    printf("Enter an email: ");
+    char userEmail[20];
+    fgets(userEmail, 20, stdin);
+    NSString* email = removeNewLine([NSString stringWithUTF8String:userEmail]);
+    
+    printf("Enter a telephone: ");
+    char userTele[20];
+    fgets(userTele, 20, stdin);
+    NSString* tele = removeNewLine([NSString stringWithUTF8String:userTele]);
+
+    AddressData* dataForDict  = [[AddressData alloc]init];
+    [dataForDict setEmail:email andPhone:tele];
+    
+    [myDict setObject:dataForDict forKey:name];
+    
     return true;
 }
 
