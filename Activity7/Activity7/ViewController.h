@@ -17,6 +17,7 @@
 -(IBAction) clickMinus;
 -(IBAction) clickEquals;
 -(IBAction) clickClear;
+-(IBAction) clickMultiply;
 
 
 

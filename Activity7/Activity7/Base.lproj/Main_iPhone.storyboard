@@ -120,6 +120,18 @@
                                     <action selector="clickClear" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CoG-Cq-g4B"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUR-o8-MBu">
+                                <rect key="frame" x="259" y="228" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="*">
+                                    <color key="titleColor" red="1" green="0.68530994779999999" blue="0.080558361169999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickMultiply" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PFv-DR-z8N"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.68530994781822296" blue="0.080558361165106285" alpha="1" colorSpace="calibratedRGB"/>
                     </view>

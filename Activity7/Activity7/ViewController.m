@@ -41,6 +41,7 @@
     if (firstOperand) myCalculator.operand1 = currentNumber;
     else myCalculator.operand2 = currentNumber;
 }
+
 -(IBAction) clickPlus   {
     op = '+';
     NSString *opStr = @" + ";
@@ -48,6 +49,7 @@
     display.text = displayString;
     firstOperand = false;
 }
+
 -(IBAction) clickMinus  {
     op = '-';
     NSString *opStr = @" - ";
@@ -55,6 +57,15 @@
     display.text = displayString;
     firstOperand = false;
 }
+
+-(IBAction) clickMultiply  {
+    op = '*';
+    NSString *opStr = @" * ";
+    [displayString appendString: opStr];
+    display.text = displayString;
+    firstOperand = false;
+}
+
 -(IBAction) clickEquals {
     if (firstOperand == false)
         

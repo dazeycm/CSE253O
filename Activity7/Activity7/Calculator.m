@@ -17,8 +17,10 @@
     switch(op)  {
         case '+': result = operand1 + operand2; break;
         case '-': result = operand1 - operand2; break;
+        case '*': result = operand1 * operand2; break;
     }
-    return result;
+    answer = result;
+    return answer;
 
 }
 -(void) clear   {
