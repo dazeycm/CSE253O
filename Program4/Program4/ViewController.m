@@ -7,7 +7,11 @@
 //
 //  My implementation of a imaginary number calculator
 //  Limitations:    No paratheses
-//                  Each operand must have an imaginary part for it. If you don't want an imaginary part, you have to put 0i
+//                  Each operand must have both a real and imaginary part specified by the user, and the real part must come before the imaginary part. This means that input such as 9 + i will not work. At the very least you will need to input 9 + 0i + 0 + 1i, read as (9 + 0i) + (0 + 1i).
+//                  The imaginary part of each operand defaults to 0, not 1. This means that doing 9 + i + 1 + i will result in 10 + 0i, and not 10 + 2i
+
+
+//  I think this problem was more challenging than I thought it was going to be because complex numbers have a real and imaginary part, separated by an operator. This means there is some complicated logic when the user presses the operator buttons, because we have to know whether they're going to put the imaginary part next or if they're going to put the next operand. Ultimately, this led to some constraints in my calculator.
 
 #import "ViewController.h"
 #import "Calculator.h"
