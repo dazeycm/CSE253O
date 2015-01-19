@@ -5,7 +5,9 @@
 //  Created by Craig Dazey on 1/19/15.
 //  Copyright (c) 2015 class. All rights reserved.
 //
-//
+//  My implementation of a imaginary number calculator
+//  Limitations:    No paratheses
+//                  Each operand must have an imaginary part for it. If you don't want an imaginary part, you have to put 0i
 
 #import "ViewController.h"
 #import "Calculator.h"
