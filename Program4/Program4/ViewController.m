@@ -2,8 +2,9 @@
 //  ViewController.m
 //  Program4
 //
-//  Created by class on 1/19/15.
+//  Created by Craig Dazey on 1/19/15.
 //  Copyright (c) 2015 class. All rights reserved.
+//
 //
 
 #import "ViewController.h"
@@ -39,31 +40,39 @@
 
 -(void) processOp: (char) theOp
 {
-    NSString *opStr;
+    if(isComplex)  {
+        NSString *opStr;
     
-    op = theOp;
+        op = theOp;
     
-    switch (theOp) {
-        case '+':
-            opStr = @" + ";
-            break;
-        case '-':
-            opStr = @" – ";
-            break;
-        case '*':
-            opStr = @" × ";
-            break;
-        case '/':
-            opStr = @" ÷ ";
-            break;
+        switch (theOp) {
+            case '+':
+                opStr = @" + ";
+                break;
+            case '-':
+                opStr = @" – ";
+                break;
+            case '*':
+                opStr = @" × ";
+                break;
+            case '/':
+                opStr = @" ÷ ";
+                break;
+        }
+
+        
+        firstOperand = NO;
+        isComplex = NO;
+    
+        [displayString appendString: opStr];
+        display.text = displayString;
+        
+        }
+    else{
+        [self storePart];
+        [displayString appendString: @" + "];
+        display.text = displayString;
     }
-    
-    [self storePart];
-    firstOperand = NO;
-    isComplex = NO;
-    
-    [displayString appendString: opStr];
-    display.text = displayString;
 }
 
 -(void) storePart
@@ -91,9 +100,9 @@
 
 -(IBAction) clickImaginary
 {
-    [self storePart];
     isComplex = YES;
-    [displayString appendString: @" + i"];
+    [self storePart];
+    [displayString appendString: @"i"];
     display.text = displayString;
 }
 
@@ -121,7 +130,6 @@
 -(IBAction) clickEquals
 {
     if ( firstOperand == NO ) {
-        [self storePart];
         [myCalculator performOperation: op];
         
         [displayString appendString: @" = "];
