@@ -9,6 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface GameViewController : UIViewController
+@property CGRect playerRect;
 @property (strong) UIImage *playerImage;
 @property (strong) UIImageView *playerView;
+@property (strong) NSTimer *moveTimer;
+
+- (IBAction)moveLeft:(id)sender;
+- (IBAction)moveRight:(id)sender;
+
+- (IBAction)TouchRelease:(id)sender;
+
+
 @end

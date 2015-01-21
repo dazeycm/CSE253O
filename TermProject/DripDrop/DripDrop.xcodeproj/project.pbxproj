@@ -27,6 +27,9 @@
 		E32ABFF81A70569A0084ABA2 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E32ABFF71A70569A0084ABA2 /* GameViewController.m */; };
 		E32ABFFE1A705CEA0084ABA2 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = E32ABFFD1A705CEA0084ABA2 /* right.png */; };
 		E32AC0001A705CF00084ABA2 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = E32ABFFF1A705CF00084ABA2 /* left.png */; };
+		E336F6EA1A7064C4009D365F /* blocky_right.png in Resources */ = {isa = PBXBuildFile; fileRef = E336F6E81A7064C4009D365F /* blocky_right.png */; };
+		E336F6EB1A7064C4009D365F /* blocky_left.png in Resources */ = {isa = PBXBuildFile; fileRef = E336F6E91A7064C4009D365F /* blocky_left.png */; };
+		E336F6EE1A7068C9009D365F /* Drop.m in Sources */ = {isa = PBXBuildFile; fileRef = E336F6ED1A7068C9009D365F /* Drop.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,10 @@
 		E32ABFF71A70569A0084ABA2 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		E32ABFFD1A705CEA0084ABA2 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
 		E32ABFFF1A705CF00084ABA2 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
+		E336F6E81A7064C4009D365F /* blocky_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blocky_right.png; sourceTree = "<group>"; };
+		E336F6E91A7064C4009D365F /* blocky_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blocky_left.png; sourceTree = "<group>"; };
+		E336F6EC1A7068C9009D365F /* Drop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drop.h; sourceTree = "<group>"; };
+		E336F6ED1A7068C9009D365F /* Drop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drop.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +132,8 @@
 		E32ABFBB1A7051520084ABA2 /* DripDrop */ = {
 			isa = PBXGroup;
 			children = (
+				E336F6EC1A7068C9009D365F /* Drop.h */,
+				E336F6ED1A7068C9009D365F /* Drop.m */,
 				E32ABFF61A70569A0084ABA2 /* GameViewController.h */,
 				E32ABFF71A70569A0084ABA2 /* GameViewController.m */,
 				E32ABFED1A7053960084ABA2 /* Resources */,
@@ -172,6 +181,8 @@
 		E32ABFED1A7053960084ABA2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E336F6E81A7064C4009D365F /* blocky_right.png */,
+				E336F6E91A7064C4009D365F /* blocky_left.png */,
 				E32ABFFF1A705CF00084ABA2 /* left.png */,
 				E32ABFFD1A705CEA0084ABA2 /* right.png */,
 				E32ABFF21A7053D70084ABA2 /* drop.png */,
@@ -256,11 +267,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E336F6EB1A7064C4009D365F /* blocky_left.png in Resources */,
 				E32ABFCC1A7051520084ABA2 /* Main_iPad.storyboard in Resources */,
 				E32ABFD11A7051520084ABA2 /* Images.xcassets in Resources */,
 				E32ABFC91A7051520084ABA2 /* Main_iPhone.storyboard in Resources */,
 				E32ABFC01A7051520084ABA2 /* InfoPlist.strings in Resources */,
 				E32ABFF41A7053D70084ABA2 /* drop.png in Resources */,
+				E336F6EA1A7064C4009D365F /* blocky_right.png in Resources */,
 				E32ABFF51A7053D70084ABA2 /* blocky.png in Resources */,
 				E32AC0001A705CF00084ABA2 /* left.png in Resources */,
 				E32ABFFE1A705CEA0084ABA2 /* right.png in Resources */,
@@ -282,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E336F6EE1A7068C9009D365F /* Drop.m in Sources */,
 				E32ABFF81A70569A0084ABA2 /* GameViewController.m in Sources */,
 				E32ABFCF1A7051520084ABA2 /* ViewController.m in Sources */,
 				E32ABFC61A7051520084ABA2 /* AppDelegate.m in Sources */,
@@ -504,6 +518,7 @@
 				E32ABFE91A7051520084ABA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E32ABFEA1A7051520084ABA2 /* Build configuration list for PBXNativeTarget "DripDropTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +527,7 @@
 				E32ABFEC1A7051520084ABA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
