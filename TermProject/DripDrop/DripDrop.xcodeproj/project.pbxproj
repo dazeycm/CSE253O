@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E32ABFB61A7051520084ABA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E32ABFB51A7051520084ABA2 /* Foundation.framework */; };
+		E32ABFB81A7051520084ABA2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E32ABFB71A7051520084ABA2 /* CoreGraphics.framework */; };
+		E32ABFBA1A7051520084ABA2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E32ABFB91A7051520084ABA2 /* UIKit.framework */; };
+		E32ABFC01A7051520084ABA2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E32ABFBE1A7051520084ABA2 /* InfoPlist.strings */; };
+		E32ABFC21A7051520084ABA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E32ABFC11A7051520084ABA2 /* main.m */; };
+		E32ABFC61A7051520084ABA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E32ABFC51A7051520084ABA2 /* AppDelegate.m */; };
+		E32ABFC91A7051520084ABA2 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32ABFC71A7051520084ABA2 /* Main_iPhone.storyboard */; };
+		E32ABFCC1A7051520084ABA2 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32ABFCA1A7051520084ABA2 /* Main_iPad.storyboard */; };
+		E32ABFCF1A7051520084ABA2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E32ABFCE1A7051520084ABA2 /* ViewController.m */; };
+		E32ABFD11A7051520084ABA2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32ABFD01A7051520084ABA2 /* Images.xcassets */; };
+		E32ABFD81A7051520084ABA2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E32ABFD71A7051520084ABA2 /* XCTest.framework */; };
+		E32ABFD91A7051520084ABA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E32ABFB51A7051520084ABA2 /* Foundation.framework */; };
+		E32ABFDA1A7051520084ABA2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E32ABFB91A7051520084ABA2 /* UIKit.framework */; };
+		E32ABFE21A7051520084ABA2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E32ABFE01A7051520084ABA2 /* InfoPlist.strings */; };
+		E32ABFE41A7051520084ABA2 /* DripDropTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E32ABFE31A7051520084ABA2 /* DripDropTests.m */; };
+		E32ABFF41A7053D70084ABA2 /* drop.png in Resources */ = {isa = PBXBuildFile; fileRef = E32ABFF21A7053D70084ABA2 /* drop.png */; };
+		E32ABFF51A7053D70084ABA2 /* blocky.png in Resources */ = {isa = PBXBuildFile; fileRef = E32ABFF31A7053D70084ABA2 /* blocky.png */; };
+		E32ABFF81A70569A0084ABA2 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E32ABFF71A70569A0084ABA2 /* GameViewController.m */; };
+		E32ABFFE1A705CEA0084ABA2 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = E32ABFFD1A705CEA0084ABA2 /* right.png */; };
+		E32AC0001A705CF00084ABA2 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = E32ABFFF1A705CF00084ABA2 /* left.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E32ABFDB1A7051520084ABA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E32ABFAA1A7051520084ABA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E32ABFB11A7051520084ABA2;
+			remoteInfo = DripDrop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E32ABFB21A7051520084ABA2 /* DripDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DripDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E32ABFB51A7051520084ABA2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E32ABFB71A7051520084ABA2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E32ABFB91A7051520084ABA2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E32ABFBD1A7051520084ABA2 /* DripDrop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DripDrop-Info.plist"; sourceTree = "<group>"; };
+		E32ABFBF1A7051520084ABA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E32ABFC11A7051520084ABA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E32ABFC31A7051520084ABA2 /* DripDrop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DripDrop-Prefix.pch"; sourceTree = "<group>"; };
+		E32ABFC41A7051520084ABA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E32ABFC51A7051520084ABA2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E32ABFC81A7051520084ABA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		E32ABFCB1A7051520084ABA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		E32ABFCD1A7051520084ABA2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E32ABFCE1A7051520084ABA2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E32ABFD01A7051520084ABA2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E32ABFD61A7051520084ABA2 /* DripDropTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DripDropTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E32ABFD71A7051520084ABA2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E32ABFDF1A7051520084ABA2 /* DripDropTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DripDropTests-Info.plist"; sourceTree = "<group>"; };
+		E32ABFE11A7051520084ABA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E32ABFE31A7051520084ABA2 /* DripDropTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DripDropTests.m; sourceTree = "<group>"; };
+		E32ABFF21A7053D70084ABA2 /* drop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drop.png; sourceTree = "<group>"; };
+		E32ABFF31A7053D70084ABA2 /* blocky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blocky.png; sourceTree = "<group>"; };
+		E32ABFF61A70569A0084ABA2 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		E32ABFF71A70569A0084ABA2 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		E32ABFFD1A705CEA0084ABA2 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+		E32ABFFF1A705CF00084ABA2 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E32ABFAF1A7051520084ABA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E32ABFB81A7051520084ABA2 /* CoreGraphics.framework in Frameworks */,
+				E32ABFBA1A7051520084ABA2 /* UIKit.framework in Frameworks */,
+				E32ABFB61A7051520084ABA2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E32ABFD31A7051520084ABA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E32ABFD81A7051520084ABA2 /* XCTest.framework in Frameworks */,
+				E32ABFDA1A7051520084ABA2 /* UIKit.framework in Frameworks */,
+				E32ABFD91A7051520084ABA2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E32ABFA91A7051520084ABA2 = {
+			isa = PBXGroup;
+			children = (
+				E32ABFBB1A7051520084ABA2 /* DripDrop */,
+				E32ABFDD1A7051520084ABA2 /* DripDropTests */,
+				E32ABFB41A7051520084ABA2 /* Frameworks */,
+				E32ABFB31A7051520084ABA2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E32ABFB31A7051520084ABA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E32ABFB21A7051520084ABA2 /* DripDrop.app */,
+				E32ABFD61A7051520084ABA2 /* DripDropTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E32ABFB41A7051520084ABA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E32ABFB51A7051520084ABA2 /* Foundation.framework */,
+				E32ABFB71A7051520084ABA2 /* CoreGraphics.framework */,
+				E32ABFB91A7051520084ABA2 /* UIKit.framework */,
+				E32ABFD71A7051520084ABA2 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E32ABFBB1A7051520084ABA2 /* DripDrop */ = {
+			isa = PBXGroup;
+			children = (
+				E32ABFF61A70569A0084ABA2 /* GameViewController.h */,
+				E32ABFF71A70569A0084ABA2 /* GameViewController.m */,
+				E32ABFED1A7053960084ABA2 /* Resources */,
+				E32ABFC41A7051520084ABA2 /* AppDelegate.h */,
+				E32ABFC51A7051520084ABA2 /* AppDelegate.m */,
+				E32ABFC71A7051520084ABA2 /* Main_iPhone.storyboard */,
+				E32ABFCA1A7051520084ABA2 /* Main_iPad.storyboard */,
+				E32ABFCD1A7051520084ABA2 /* ViewController.h */,
+				E32ABFCE1A7051520084ABA2 /* ViewController.m */,
+				E32ABFD01A7051520084ABA2 /* Images.xcassets */,
+				E32ABFBC1A7051520084ABA2 /* Supporting Files */,
+			);
+			path = DripDrop;
+			sourceTree = "<group>";
+		};
+		E32ABFBC1A7051520084ABA2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E32ABFBD1A7051520084ABA2 /* DripDrop-Info.plist */,
+				E32ABFBE1A7051520084ABA2 /* InfoPlist.strings */,
+				E32ABFC11A7051520084ABA2 /* main.m */,
+				E32ABFC31A7051520084ABA2 /* DripDrop-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E32ABFDD1A7051520084ABA2 /* DripDropTests */ = {
+			isa = PBXGroup;
+			children = (
+				E32ABFE31A7051520084ABA2 /* DripDropTests.m */,
+				E32ABFDE1A7051520084ABA2 /* Supporting Files */,
+			);
+			path = DripDropTests;
+			sourceTree = "<group>";
+		};
+		E32ABFDE1A7051520084ABA2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E32ABFDF1A7051520084ABA2 /* DripDropTests-Info.plist */,
+				E32ABFE01A7051520084ABA2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E32ABFED1A7053960084ABA2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E32ABFFF1A705CF00084ABA2 /* left.png */,
+				E32ABFFD1A705CEA0084ABA2 /* right.png */,
+				E32ABFF21A7053D70084ABA2 /* drop.png */,
+				E32ABFF31A7053D70084ABA2 /* blocky.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E32ABFB11A7051520084ABA2 /* DripDrop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E32ABFE71A7051520084ABA2 /* Build configuration list for PBXNativeTarget "DripDrop" */;
+			buildPhases = (
+				E32ABFAE1A7051520084ABA2 /* Sources */,
+				E32ABFAF1A7051520084ABA2 /* Frameworks */,
+				E32ABFB01A7051520084ABA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DripDrop;
+			productName = DripDrop;
+			productReference = E32ABFB21A7051520084ABA2 /* DripDrop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E32ABFD51A7051520084ABA2 /* DripDropTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E32ABFEA1A7051520084ABA2 /* Build configuration list for PBXNativeTarget "DripDropTests" */;
+			buildPhases = (
+				E32ABFD21A7051520084ABA2 /* Sources */,
+				E32ABFD31A7051520084ABA2 /* Frameworks */,
+				E32ABFD41A7051520084ABA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E32ABFDC1A7051520084ABA2 /* PBXTargetDependency */,
+			);
+			name = DripDropTests;
+			productName = DripDropTests;
+			productReference = E32ABFD61A7051520084ABA2 /* DripDropTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E32ABFAA1A7051520084ABA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Dazey, Craig Michael Jr.";
+				TargetAttributes = {
+					E32ABFD51A7051520084ABA2 = {
+						TestTargetID = E32ABFB11A7051520084ABA2;
+					};
+				};
+			};
+			buildConfigurationList = E32ABFAD1A7051520084ABA2 /* Build configuration list for PBXProject "DripDrop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E32ABFA91A7051520084ABA2;
+			productRefGroup = E32ABFB31A7051520084ABA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E32ABFB11A7051520084ABA2 /* DripDrop */,
+				E32ABFD51A7051520084ABA2 /* DripDropTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E32ABFB01A7051520084ABA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E32ABFCC1A7051520084ABA2 /* Main_iPad.storyboard in Resources */,
+				E32ABFD11A7051520084ABA2 /* Images.xcassets in Resources */,
+				E32ABFC91A7051520084ABA2 /* Main_iPhone.storyboard in Resources */,
+				E32ABFC01A7051520084ABA2 /* InfoPlist.strings in Resources */,
+				E32ABFF41A7053D70084ABA2 /* drop.png in Resources */,
+				E32ABFF51A7053D70084ABA2 /* blocky.png in Resources */,
+				E32AC0001A705CF00084ABA2 /* left.png in Resources */,
+				E32ABFFE1A705CEA0084ABA2 /* right.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E32ABFD41A7051520084ABA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E32ABFE21A7051520084ABA2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E32ABFAE1A7051520084ABA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E32ABFF81A70569A0084ABA2 /* GameViewController.m in Sources */,
+				E32ABFCF1A7051520084ABA2 /* ViewController.m in Sources */,
+				E32ABFC61A7051520084ABA2 /* AppDelegate.m in Sources */,
+				E32ABFC21A7051520084ABA2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E32ABFD21A7051520084ABA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E32ABFE41A7051520084ABA2 /* DripDropTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E32ABFDC1A7051520084ABA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E32ABFB11A7051520084ABA2 /* DripDrop */;
+			targetProxy = E32ABFDB1A7051520084ABA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E32ABFBE1A7051520084ABA2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E32ABFBF1A7051520084ABA2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E32ABFC71A7051520084ABA2 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E32ABFC81A7051520084ABA2 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		E32ABFCA1A7051520084ABA2 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E32ABFCB1A7051520084ABA2 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		E32ABFE01A7051520084ABA2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E32ABFE11A7051520084ABA2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E32ABFE51A7051520084ABA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E32ABFE61A7051520084ABA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E32ABFE81A7051520084ABA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DripDrop/DripDrop-Prefix.pch";
+				INFOPLIST_FILE = "DripDrop/DripDrop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E32ABFE91A7051520084ABA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DripDrop/DripDrop-Prefix.pch";
+				INFOPLIST_FILE = "DripDrop/DripDrop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E32ABFEB1A7051520084ABA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DripDrop.app/DripDrop";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DripDrop/DripDrop-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DripDropTests/DripDropTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E32ABFEC1A7051520084ABA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DripDrop.app/DripDrop";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DripDrop/DripDrop-Prefix.pch";
+				INFOPLIST_FILE = "DripDropTests/DripDropTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E32ABFAD1A7051520084ABA2 /* Build configuration list for PBXProject "DripDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E32ABFE51A7051520084ABA2 /* Debug */,
+				E32ABFE61A7051520084ABA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E32ABFE71A7051520084ABA2 /* Build configuration list for PBXNativeTarget "DripDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E32ABFE81A7051520084ABA2 /* Debug */,
+				E32ABFE91A7051520084ABA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E32ABFEA1A7051520084ABA2 /* Build configuration list for PBXNativeTarget "DripDropTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E32ABFEB1A7051520084ABA2 /* Debug */,
+				E32ABFEC1A7051520084ABA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E32ABFAA1A7051520084ABA2 /* Project object */;
+}
