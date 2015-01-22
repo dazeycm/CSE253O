@@ -61,7 +61,8 @@
     
     ScoreObject* temp = [self.data objectAtIndex: indexPath.row];
     
-    NSString* rowInfo = [NSString stringWithFormat:@"Name: %@\t\t\tScore: %@", temp.name, temp.score];
+    NSString* rowInfo = [NSString stringWithFormat:@"Name: %@\t\t\t\tScore: %@", temp.name, temp.score];
+    cell.textLabel.font = [UIFont systemFontOfSize:12.0f];
     cell.textLabel.text = rowInfo;
     
     return cell;
