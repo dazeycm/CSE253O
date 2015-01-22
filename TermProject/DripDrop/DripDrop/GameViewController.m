@@ -72,7 +72,6 @@
 }
 
 -(void) intersectCheck  {
-    printf("%s", "Checking!");
     for(int i = 0; i < self.drop.drops.count; i++)   {
         Drip* tmpDrop = self.drop.drops[i];
         if(CGRectIntersectsRect(tmpDrop.dropRect, self.player.playerRect))    {
