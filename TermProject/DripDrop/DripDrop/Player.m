@@ -16,7 +16,7 @@
     self.playerImage = [UIImage imageNamed:@"blocky.png"];
     self.playerView = [[UIImageView alloc] initWithImage:self.playerImage];
     
-    self.playerRect = CGRectMake(50,400, 32,32);
+    self.playerRect = CGRectMake(50, 443, 32,32);
     self.playerView.frame = self.playerRect;
     
     [self.gameView addSubview:self.playerView];

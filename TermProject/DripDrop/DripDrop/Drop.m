@@ -31,7 +31,7 @@
     int xPos = arc4random_uniform(280) + 10;
     
     Drip* newDrip = [[Drip alloc] init];
-    [newDrip initWithxPos:xPos yPos:10 view:self.gameView];
+    [newDrip initWithxPos:xPos yPos:30 view:self.gameView];
     
     [self.drops addObject:newDrip];
 
@@ -42,7 +42,7 @@
         Drip* drip = self.drops[i];
         drip.dropRect = CGRectOffset(drip.dropRect, 0, drip.speed);
         drip.dropView.frame = drip.dropRect;
-        if(drip.dropRect.origin.y > 400)    {
+        if(drip.dropRect.origin.y > 455)    {
             [drip.dropView removeFromSuperview];
             
         }
