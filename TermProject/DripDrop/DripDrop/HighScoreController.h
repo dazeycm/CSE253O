@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DBManager.h"
 
-@interface HighScoreController : UITableViewController
+@interface HighScoreController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-http://www.appcoda.com/uitableview-tutorial-storyboard-xcode5/
+@property NSArray* data;
+
+@property (weak, nonatomic) IBOutlet UITableView *highScoreTable;
 
 @end
