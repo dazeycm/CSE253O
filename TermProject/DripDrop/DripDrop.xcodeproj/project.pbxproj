@@ -39,6 +39,7 @@
 		E3546FF71A7158CD00681C93 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E3546FF61A7158CD00681C93 /* libsqlite3.dylib */; };
 		E3546FFD1A71709700681C93 /* HighScoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3546FFC1A71709700681C93 /* HighScoreController.m */; };
 		E370FA831A7190C80093E1DC /* ScoreObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E370FA821A7190C80093E1DC /* ScoreObject.m */; };
+		E370FA861A7195DF0093E1DC /* BackgroundChooser.m in Sources */ = {isa = PBXBuildFile; fileRef = E370FA851A7195DF0093E1DC /* BackgroundChooser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,8 @@
 		E3546FFC1A71709700681C93 /* HighScoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScoreController.m; sourceTree = "<group>"; };
 		E370FA811A7190C80093E1DC /* ScoreObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreObject.h; sourceTree = "<group>"; };
 		E370FA821A7190C80093E1DC /* ScoreObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreObject.m; sourceTree = "<group>"; };
+		E370FA841A7195DF0093E1DC /* BackgroundChooser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundChooser.h; sourceTree = "<group>"; };
+		E370FA851A7195DF0093E1DC /* BackgroundChooser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundChooser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +173,8 @@
 				E336F6F21A7077EA009D365F /* Player.m */,
 				E370FA811A7190C80093E1DC /* ScoreObject.h */,
 				E370FA821A7190C80093E1DC /* ScoreObject.m */,
+				E370FA841A7195DF0093E1DC /* BackgroundChooser.h */,
+				E370FA851A7195DF0093E1DC /* BackgroundChooser.m */,
 				E3546FF31A7157D200681C93 /* DBManager.h */,
 				E3546FF41A7157D200681C93 /* DBManager.m */,
 				E32ABFF61A70569A0084ABA2 /* GameViewController.h */,
@@ -346,6 +351,7 @@
 				E336F6F31A7077EA009D365F /* Player.m in Sources */,
 				E32ABFC21A7051520084ABA2 /* main.m in Sources */,
 				E3546FF51A7157D200681C93 /* DBManager.m in Sources */,
+				E370FA861A7195DF0093E1DC /* BackgroundChooser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
