@@ -10,4 +10,6 @@
 
 @interface HighScoreController : UITableViewController
 
+http://www.appcoda.com/uitableview-tutorial-storyboard-xcode5/
+
 @end
