@@ -11,12 +11,11 @@
 @interface Drop : NSObject
 
 @property UIView* gameView;
-@property UIImage* dropImage;
 @property NSMutableArray* drops;
 @property NSTimer* makeDropsTimer;
 @property NSTimer* moveDropsTimer;
 
--(void) startDrops: (UIView*) gameView;
+-(Drop*) startDrops: (UIView*) gameView;
 -(void) makeDrop;
 -(void) moveDrops;
 

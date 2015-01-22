@@ -2,12 +2,11 @@
 //  GameViewController.m
 //  DripDrop
 //
-//  Created by Dazey, Craig Michael Jr. on 1/21/15.
+//  Created by ;, Craig Michael Jr. on 1/21/15.
 //  Copyright (c) 2015 Dazey, Craig Michael Jr. All rights reserved.
 //
 
 #import "GameViewController.h"
-#import "Drop.h"
 
 @implementation GameViewController
 
@@ -22,16 +21,16 @@
 
 - (void)viewDidLoad
 {
-    self.playerImage = [UIImage imageNamed:@"blocky.png"];
+    self.Player = [[[Player alloc]init]initPlayer:self.view];
+    self.playerView = [self.player getPlayerView];
+    self.drop = [[[Drop alloc]init] startDrops: self.view];
     
-    self.playerView = [[UIImageView alloc]initWithImage:self.playerImage];
-    
-    self.playerRect = CGRectMake(150, 450, 32, 32);
-    self.playerView.frame = self.playerRect;
-    
-	[self.view addSubview: self.playerView];
-    [[[Drop alloc]init] startDrops:self.view];
-    
+    self.intersectTimer = [NSTimer scheduledTimerWithTimeInterval:.03
+                                                          target:self
+                                                        selector:@selector(intersectCheck)
+                                                        userInfo:nil
+                                                         repeats:YES];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,9 +41,9 @@
 
 - (IBAction)moveLeft:(id)sender {
     [self releaseTouch];
-    [self.playerView setImage: [UIImage imageNamed:@"blocky_left.png"]];
+    [self.player.playerView setImage: [UIImage imageNamed:@"blocky_left.png"]];
     self.moveTimer = [NSTimer scheduledTimerWithTimeInterval:.03
-                                                      target:self
+                                                      target:self.player
                                                     selector:@selector(movePlayerLeft)
                                                     userInfo:nil
                                                      repeats:YES];
@@ -52,9 +51,9 @@
 
 - (IBAction)moveRight:(id)sender {
     [self releaseTouch];
-    [self.playerView setImage: [UIImage imageNamed:@"blocky_right.png"]];
+    [self.player.playerView setImage: [UIImage imageNamed:@"blocky_right.png"]];
     self.moveTimer = [NSTimer scheduledTimerWithTimeInterval:.03
-                                                      target:self
+                                                      target:self.player
                                                     selector:@selector(movePlayerRight)
                                                     userInfo:nil
                                                      repeats:YES];
@@ -62,27 +61,40 @@
 
 - (IBAction)TouchRelease:(id)sender {
     [self releaseTouch];
-    [self.playerView setImage: [UIImage imageNamed:@"blocky.png"]];
+    [self.player.playerView setImage: [UIImage imageNamed:@"blocky.png"]];
 }
 
--(void) movePlayerRight{
-    if(self.playerRect.origin.x <= 290){
-        self.playerRect = CGRectOffset(self.playerRect, 3, 0);
-        self.playerView.frame = self.playerRect;
-    }
-}
--(void) movePlayerLeft{
-    if(self.playerRect.origin.x >= 0){
-        self.playerRect = CGRectOffset(self.playerRect, -3, 0);
-        self.playerView.frame = self.playerRect;
-    }
-}
 -(void)releaseTouch{
     if(self.moveTimer != nil){
         [self.moveTimer invalidate];
         self.moveTimer = nil;
     }
 }
+
+-(void) intersectCheck  {
+    printf("%s", "Checking!");
+    for(int i = 0; i < self.drop.drops.count; i++)   {
+        Drip* tmpDrop = self.drop.drops[i];
+        if(CGRectIntersectsRect(tmpDrop.dropRect, self.player.playerRect))    {
+            printf("%s", "Collision!");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @end

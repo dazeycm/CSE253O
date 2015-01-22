@@ -7,17 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Player.h"
+#import "Drop.h"
+#import "Drip.h"
 
 @interface GameViewController : UIViewController
-@property CGRect playerRect;
-@property (strong) UIImage *playerImage;
-@property (strong) UIImageView *playerView;
+
+@property (strong) UIView *playerView;
 @property (strong) NSTimer *moveTimer;
+@property (strong) NSTimer *intersectTimer;
+@property (strong) Player* player;
+@property (strong) Drop* drop;
 
 - (IBAction)moveLeft:(id)sender;
 - (IBAction)moveRight:(id)sender;
-
 - (IBAction)TouchRelease:(id)sender;
+
+-(void) intersectCheck;
 
 
 @end

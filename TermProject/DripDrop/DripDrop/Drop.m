@@ -7,14 +7,13 @@
 //
 
 #import "Drop.h"
+#import "Drip.h"
 
 @implementation Drop
 
--(void) startDrops: (UIView*) gameView  {
+-(Drop*) startDrops: (UIView*) gameView  {
     self.gameView = gameView;
-    self.dropImage = [UIImage imageNamed:@"drop.png"];
     self.drops = [[NSMutableArray alloc]init];
-    
     self.makeDropsTimer = [NSTimer scheduledTimerWithTimeInterval:1
                                                          target:self
                                                        selector:@selector(makeDrop)
@@ -25,29 +24,24 @@
                                                          selector:@selector(moveDrops)
                                                          userInfo:nil
                                                           repeats:YES];
-
+    return self;
 }
 
 -(void) makeDrop {
     int xPos = arc4random_uniform(280) + 10;
-    int yPos = 10;
     
-    UIImageView *dropView = [[UIImageView alloc]initWithImage:self.dropImage];
-    dropView.frame = CGRectMake(xPos, yPos, 10, 20);
+    Drip* newDrip = [[Drip alloc] init];
+    [newDrip initWithxPos:xPos yPos:10 view:self.gameView];
     
-    [self.drops addObject:dropView];
-    [self.gameView addSubview:dropView];
+    [self.drops addObject:newDrip];
 
 }
 
 -(void) moveDrops   {
     for(int i=0;i< self.drops.count; i++){
-        UIImageView* dropView = self.drops[i];
-        int yPos = dropView.frame.origin.y + 3;
-        dropView.frame = CGRectMake(dropView.frame.origin.x, yPos, 10, 20);
-        
-        //add the new enemy to the game view
-        [self.gameView addSubview:dropView];
+        Drip* drip = self.drops[i];
+        drip.dropRect = CGRectOffset(drip.dropRect, 0, 3);
+        drip.dropView.frame = drip.dropRect;
     }
     
 }

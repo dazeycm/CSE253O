@@ -30,6 +30,8 @@
 		E336F6EB1A7064C4009D365F /* blocky_left.png in Resources */ = {isa = PBXBuildFile; fileRef = E336F6E91A7064C4009D365F /* blocky_left.png */; };
 		E336F6EE1A7068C9009D365F /* Drop.m in Sources */ = {isa = PBXBuildFile; fileRef = E336F6ED1A7068C9009D365F /* Drop.m */; };
 		E336F6F01A7072EB009D365F /* drop.png in Resources */ = {isa = PBXBuildFile; fileRef = E336F6EF1A7072EB009D365F /* drop.png */; };
+		E336F6F31A7077EA009D365F /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = E336F6F21A7077EA009D365F /* Player.m */; };
+		E336F6F61A7082F7009D365F /* Drip.m in Sources */ = {isa = PBXBuildFile; fileRef = E336F6F51A7082F7009D365F /* Drip.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,10 @@
 		E336F6EC1A7068C9009D365F /* Drop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drop.h; sourceTree = "<group>"; };
 		E336F6ED1A7068C9009D365F /* Drop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drop.m; sourceTree = "<group>"; };
 		E336F6EF1A7072EB009D365F /* drop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drop.png; sourceTree = "<group>"; };
+		E336F6F11A7077EA009D365F /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		E336F6F21A7077EA009D365F /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		E336F6F41A7082F7009D365F /* Drip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drip.h; sourceTree = "<group>"; };
+		E336F6F51A7082F7009D365F /* Drip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drip.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,10 @@
 		E32ABFBB1A7051520084ABA2 /* DripDrop */ = {
 			isa = PBXGroup;
 			children = (
+				E336F6F41A7082F7009D365F /* Drip.h */,
+				E336F6F51A7082F7009D365F /* Drip.m */,
+				E336F6F11A7077EA009D365F /* Player.h */,
+				E336F6F21A7077EA009D365F /* Player.m */,
 				E336F6EC1A7068C9009D365F /* Drop.h */,
 				E336F6ED1A7068C9009D365F /* Drop.m */,
 				E32ABFF61A70569A0084ABA2 /* GameViewController.h */,
@@ -299,6 +309,8 @@
 				E32ABFF81A70569A0084ABA2 /* GameViewController.m in Sources */,
 				E32ABFCF1A7051520084ABA2 /* ViewController.m in Sources */,
 				E32ABFC61A7051520084ABA2 /* AppDelegate.m in Sources */,
+				E336F6F61A7082F7009D365F /* Drip.m in Sources */,
+				E336F6F31A7077EA009D365F /* Player.m in Sources */,
 				E32ABFC21A7051520084ABA2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
