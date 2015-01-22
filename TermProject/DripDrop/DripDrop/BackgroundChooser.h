@@ -11,6 +11,6 @@
 @interface BackgroundChooser : NSObject
 @property UIImage* currentImage;
 
--(UIImage*) getNewBGImage;
+-(void) getNewBGImage;
 
 @end

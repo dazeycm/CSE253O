@@ -10,7 +10,10 @@
 
 @implementation BackgroundChooser
 
--(UIImage*) getNewBGImage   {
+-(void) getNewBGImage   {
+    NSURL *url = [NSURL URLWithString:@"http://api.openweathermap.org/data/2.5/weather?q=London,uk"];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+    [NSURLConnection connectionWithRequest:request delegate:self];
     
 }
 
