@@ -120,11 +120,6 @@
     self.goToMainMenuButton.hidden = NO;
     
     [[DBManager getSharedInstance] storeName:self.userInput.text andScore:self.score];
-    NSArray* test = [[DBManager getSharedInstance] getTop10Scores];
-    for(int i = 0; i < test.count; i++) {
-        NSLog(@"Name: %@     Score: %@", [test objectAtIndex:i], [test objectAtIndex:i + 1]);
-        i++;
-    }
     return YES;
 }
 
