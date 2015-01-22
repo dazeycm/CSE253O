@@ -25,7 +25,7 @@
     
     BackgroundChooser* bgChooser = [[BackgroundChooser alloc]init];
     [bgChooser getNewBGImage];
-    printf("finished");
+    
     }
 
 - (void)didReceiveMemoryWarning

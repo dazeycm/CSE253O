@@ -40,6 +40,10 @@
 		E3546FFD1A71709700681C93 /* HighScoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3546FFC1A71709700681C93 /* HighScoreController.m */; };
 		E370FA831A7190C80093E1DC /* ScoreObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E370FA821A7190C80093E1DC /* ScoreObject.m */; };
 		E370FA861A7195DF0093E1DC /* BackgroundChooser.m in Sources */ = {isa = PBXBuildFile; fileRef = E370FA851A7195DF0093E1DC /* BackgroundChooser.m */; };
+		E370FA8C1A71B0B10093E1DC /* cold.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E370FA881A71B0B10093E1DC /* cold.jpg */; };
+		E370FA8D1A71B0B10093E1DC /* arctic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E370FA891A71B0B10093E1DC /* arctic.jpg */; };
+		E370FA8E1A71B0B10093E1DC /* desert.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E370FA8A1A71B0B10093E1DC /* desert.jpg */; };
+		E370FA8F1A71B0B10093E1DC /* fall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E370FA8B1A71B0B10093E1DC /* fall.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +103,10 @@
 		E370FA841A7195DF0093E1DC /* BackgroundChooser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundChooser.h; sourceTree = "<group>"; };
 		E370FA851A7195DF0093E1DC /* BackgroundChooser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundChooser.m; sourceTree = "<group>"; };
 		E370FA871A71A6F30093E1DC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E370FA881A71B0B10093E1DC /* cold.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cold.jpg; sourceTree = "<group>"; };
+		E370FA891A71B0B10093E1DC /* arctic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arctic.jpg; sourceTree = "<group>"; };
+		E370FA8A1A71B0B10093E1DC /* desert.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = desert.jpg; sourceTree = "<group>"; };
+		E370FA8B1A71B0B10093E1DC /* fall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fall.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +229,10 @@
 		E32ABFED1A7053960084ABA2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E370FA881A71B0B10093E1DC /* cold.jpg */,
+				E370FA891A71B0B10093E1DC /* arctic.jpg */,
+				E370FA8A1A71B0B10093E1DC /* desert.jpg */,
+				E370FA8B1A71B0B10093E1DC /* fall.jpg */,
 				E336F6FB1A70A072009D365F /* cloud.png */,
 				E336F6F91A709CBF009D365F /* ground.png */,
 				E336F6F71A70967D009D365F /* back.png */,
@@ -310,16 +322,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E370FA8E1A71B0B10093E1DC /* desert.jpg in Resources */,
 				E336F6FA1A709CBF009D365F /* ground.png in Resources */,
 				E336F6EB1A7064C4009D365F /* blocky_left.png in Resources */,
 				E32ABFCC1A7051520084ABA2 /* Main_iPad.storyboard in Resources */,
 				E32ABFD11A7051520084ABA2 /* Images.xcassets in Resources */,
 				E32ABFC91A7051520084ABA2 /* Main_iPhone.storyboard in Resources */,
+				E370FA8C1A71B0B10093E1DC /* cold.jpg in Resources */,
 				E32ABFC01A7051520084ABA2 /* InfoPlist.strings in Resources */,
+				E370FA8D1A71B0B10093E1DC /* arctic.jpg in Resources */,
 				E336F6EA1A7064C4009D365F /* blocky_right.png in Resources */,
 				E336F6F01A7072EB009D365F /* drop.png in Resources */,
 				E336F6F81A70967D009D365F /* back.png in Resources */,
 				E32ABFF51A7053D70084ABA2 /* blocky.png in Resources */,
+				E370FA8F1A71B0B10093E1DC /* fall.jpg in Resources */,
 				E336F6FC1A70A072009D365F /* cloud.png in Resources */,
 				E32AC0001A705CF00084ABA2 /* left.png in Resources */,
 				E32ABFFE1A705CEA0084ABA2 /* right.png in Resources */,

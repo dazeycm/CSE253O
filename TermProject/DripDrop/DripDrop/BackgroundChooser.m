@@ -8,6 +8,8 @@
 
 #import "BackgroundChooser.h"
 
+static UIImage* currentImage;
+
 @implementation BackgroundChooser
 
 -(UIImage*) getNewBGImage   {
@@ -19,10 +21,30 @@
     [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:5]];
     
     NSDictionary *jason = [self.derulo objectForKey:@"main"];
-    NSArray* test = [jason objectForKey: @"temp"];
     
-    id temp = [test objectAtIndex:0];
-    return nil;
+    double test = [[jason objectForKey: @"temp"] doubleValue];
+    double farenheit = (test - 273.15)* 1.8000 + 32.00;
+    
+    UIImage* ret = [[UIImage alloc]init];
+    if(farenheit < 0)    {
+        ret = [UIImage imageNamed:@"arctic.jpg"];
+    }
+    else if (farenheit < 32) {
+        ret = [UIImage imageNamed:@"cold.jpg"];
+    }
+    else if (farenheit < 75) {
+        ret = [UIImage imageNamed:@"fall.jpg"];
+    }
+    else if (farenheit < 200)    {
+        ret = [UIImage imageNamed:@"desert.jpg"];
+    }
+    
+    currentImage = ret;
+    return ret;
+}
+
++ (UIImage*) image {
+    return currentImage;
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {

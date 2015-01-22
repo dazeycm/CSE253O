@@ -13,8 +13,8 @@
 }
 
 @property NSDictionary* derulo;
-@property UIImage* currentImage;
 
 -(UIImage*) getNewBGImage;
 
++(UIImage*) image;
 @end

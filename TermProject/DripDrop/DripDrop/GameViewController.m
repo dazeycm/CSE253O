@@ -21,6 +21,8 @@
 
 - (void)viewDidLoad
 {
+    BackgroundChooser* bg = [[BackgroundChooser alloc]init];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[BackgroundChooser image]];
     self.score = 0;
     self.Player = [[[Player alloc]init]initPlayer:self.view];
     self.playerView = [self.player getPlayerView];
