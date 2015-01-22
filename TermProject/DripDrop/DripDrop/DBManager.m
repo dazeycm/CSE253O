@@ -79,7 +79,7 @@ static sqlite3_stmt *statement = nil;
 -(NSArray*) getTop10Scores  {
     const char *dbpath = [dbPath UTF8String];
     if (sqlite3_open(dbpath, &database) == SQLITE_OK)   {
-        NSString *querySQL = @"SELECT Name, Score FROM Scores ORDER BY Score DESC LIMIT 8;";
+        NSString *querySQL = @"SELECT Name, Score FROM Scores ORDER BY Score DESC LIMIT 20;";
         const char *query_stmt = [querySQL UTF8String];
         NSMutableArray *resultArray = [[NSMutableArray alloc]init];
         if (sqlite3_prepare_v2(database, query_stmt, -1, &statement, NULL) == SQLITE_OK)    {
