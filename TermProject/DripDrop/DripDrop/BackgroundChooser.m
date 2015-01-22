@@ -13,7 +13,12 @@ static UIImage* currentImage;
 @implementation BackgroundChooser
 
 -(UIImage*) getNewBGImage   {
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://api.openweathermap.org/data/2.5/weather?q=London,uk"]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://api.openweathermap.org/data/2.5/weather?q=Oxford,oh"]];
+    
+    //super cold
+    //http://api.openweathermap.org/data/2.5/weather?q=Oymyakon,ru
+    //maybe warm
+    //http://api.openweathermap.org/data/2.5/weather?q=miami,fl
     
     // Create url connection and fire request
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
