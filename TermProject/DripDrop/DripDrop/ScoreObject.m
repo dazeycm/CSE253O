@@ -10,6 +10,9 @@
 
 @implementation ScoreObject
 
-
+-(void) setScore:(NSString *)name andName:(NSString *)score {
+    self.name = name;
+    self.score = score;
+}
 
 @end
