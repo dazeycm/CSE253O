@@ -1,8 +1,8 @@
 # Term Project
 My term project for CSE253O
 
-## Ideas
-* selectable backgrounds based on popular cities. change backgrounds to pics of things like hot and cold - get from some weather API
-* basic db system to keep track of high scores
-* super simple game like dodge falling blocks or space invaders
-* play sound of game losing
+##Resources
+
+http://stackoverflow.com/questions/2167623/how-to-set-background-image-of-a-view
+http://www.online-image-editor.com/
+http://makepixelart.com/artists/anonymous/cloud_246
