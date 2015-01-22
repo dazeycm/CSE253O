@@ -10,4 +10,8 @@
 
 @implementation BackgroundChooser
 
+-(UIImage*) getNewBGImage   {
+    
+}
+
 @end

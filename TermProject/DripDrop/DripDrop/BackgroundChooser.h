@@ -10,4 +10,6 @@
 
 @interface BackgroundChooser : NSObject
 
+-(UIImage*) getNewBGImage;
+
 @end
