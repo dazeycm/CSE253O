@@ -59,8 +59,9 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
+    ScoreObject* temp = [self.data objectAtIndex: indexPath.row];
     
-    NSString* rowInfo = [NSString stringWithFormat:@"Name: %@\t\t\tScore: %@", [self.data objectAtIndex: indexPath.row], [self.data objectAtIndex: indexPath.row + 1]];
+    NSString* rowInfo = [NSString stringWithFormat:@"Name: %@\t\t\tScore: %@", temp.name, temp.score];
     cell.textLabel.text = rowInfo;
     
     return cell;

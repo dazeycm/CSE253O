@@ -85,9 +85,12 @@ static sqlite3_stmt *statement = nil;
         if (sqlite3_prepare_v2(database, query_stmt, -1, &statement, NULL) == SQLITE_OK)    {
             while (sqlite3_step(statement) == SQLITE_ROW)   {
                 NSString *name = [[NSString alloc] initWithUTF8String: (const char *) sqlite3_column_text(statement, 0)];
-                [resultArray addObject:name];
+                
                 NSString *score = [[NSString alloc] initWithUTF8String: (const char *) sqlite3_column_text(statement, 1)];
-                [resultArray addObject:score];
+                
+                ScoreObject* scoreToAdd = [[ScoreObject alloc]init];
+                [scoreToAdd setScore: score andName: name];
+                [resultArray addObject: scoreToAdd];
             }
             sqlite3_reset(statement);
             return resultArray;

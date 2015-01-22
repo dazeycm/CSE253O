@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "DBManager.h"
+#import "ScoreObject.h"
 
 @interface HighScoreController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 

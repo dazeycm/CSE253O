@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <sqlite3.h>
+#import "ScoreObject.h"
 
 @interface DBManager : NSObject {
     NSString* dbPath;
