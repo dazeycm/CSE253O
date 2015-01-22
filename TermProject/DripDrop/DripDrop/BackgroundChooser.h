@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface BackgroundChooser : NSObject
+@property UIImage* currentImage;
 
 -(UIImage*) getNewBGImage;
 
