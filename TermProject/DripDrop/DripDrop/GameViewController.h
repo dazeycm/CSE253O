@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Dazey, Craig Michael Jr. All rights reserved.
 //
 
+//  TODO: KILL PLAYER, UMBRELLAS, DYNAMIC BG, LEADERBOARDS AND LEADERBOARD POPUP
+
 #import <UIKit/UIKit.h>
 #import "Player.h"
 #import "Drop.h"
