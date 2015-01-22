@@ -41,9 +41,12 @@
     for(int i=0;i< self.drops.count; i++){
         Drip* drip = self.drops[i];
         drip.dropRect = CGRectOffset(drip.dropRect, 0, 3);
-        if(drip.dropRect.origin.y > 400)
-            [drip.dropView removeFromSuperview];
         drip.dropView.frame = drip.dropRect;
+        if(drip.dropRect.origin.y > 400)    {
+            [drip.dropView removeFromSuperview];
+            
+        }
+        
     }
     
 }

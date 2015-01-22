@@ -18,6 +18,7 @@
 @property (strong) NSTimer *intersectTimer;
 @property (strong) Player* player;
 @property (strong) Drop* drop;
+@property int score;
 
 - (IBAction)moveLeft:(id)sender;
 - (IBAction)moveRight:(id)sender;

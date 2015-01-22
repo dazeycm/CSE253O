@@ -21,6 +21,7 @@
 
 - (void)viewDidLoad
 {
+    self.score = 0;
     self.Player = [[[Player alloc]init]initPlayer:self.view];
     self.playerView = [self.player getPlayerView];
     self.drop = [[[Drop alloc]init] startDrops: self.view];
@@ -75,7 +76,7 @@
     for(int i = 0; i < self.drop.drops.count; i++)   {
         Drip* tmpDrop = self.drop.drops[i];
         if(CGRectIntersectsRect(tmpDrop.dropRect, self.player.playerRect))    {
-            printf("%s", "Collision!");
+            [tmpDrop.dropView removeFromSuperview];
         }
     }
 }
