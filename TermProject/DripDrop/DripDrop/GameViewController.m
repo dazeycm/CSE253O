@@ -31,6 +31,12 @@
                                                         selector:@selector(intersectCheck)
                                                         userInfo:nil
                                                          repeats:YES];
+    self.scoreTimer = [NSTimer scheduledTimerWithTimeInterval:1
+                                                       target:self
+                                                     selector:@selector(incScore)
+                                                     userInfo:nil
+                                                      repeats:YES];
+
 
 }
 
@@ -79,6 +85,11 @@
             [tmpDrop.dropView removeFromSuperview];
         }
     }
+}
+
+-(void) incScore    {
+    self.score++;
+    self.scoreText.text = [@(self.score) stringValue];
 }
 
 

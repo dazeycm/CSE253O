@@ -32,6 +32,9 @@
 		E336F6F01A7072EB009D365F /* drop.png in Resources */ = {isa = PBXBuildFile; fileRef = E336F6EF1A7072EB009D365F /* drop.png */; };
 		E336F6F31A7077EA009D365F /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = E336F6F21A7077EA009D365F /* Player.m */; };
 		E336F6F61A7082F7009D365F /* Drip.m in Sources */ = {isa = PBXBuildFile; fileRef = E336F6F51A7082F7009D365F /* Drip.m */; };
+		E336F6F81A70967D009D365F /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = E336F6F71A70967D009D365F /* back.png */; };
+		E336F6FA1A709CBF009D365F /* ground.png in Resources */ = {isa = PBXBuildFile; fileRef = E336F6F91A709CBF009D365F /* ground.png */; };
+		E336F6FC1A70A072009D365F /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = E336F6FB1A70A072009D365F /* cloud.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,9 @@
 		E336F6F21A7077EA009D365F /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		E336F6F41A7082F7009D365F /* Drip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drip.h; sourceTree = "<group>"; };
 		E336F6F51A7082F7009D365F /* Drip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drip.m; sourceTree = "<group>"; };
+		E336F6F71A70967D009D365F /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		E336F6F91A709CBF009D365F /* ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ground.png; sourceTree = "<group>"; };
+		E336F6FB1A70A072009D365F /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,19 +144,19 @@
 		E32ABFBB1A7051520084ABA2 /* DripDrop */ = {
 			isa = PBXGroup;
 			children = (
-				E336F6F41A7082F7009D365F /* Drip.h */,
-				E336F6F51A7082F7009D365F /* Drip.m */,
-				E336F6F11A7077EA009D365F /* Player.h */,
-				E336F6F21A7077EA009D365F /* Player.m */,
-				E336F6EC1A7068C9009D365F /* Drop.h */,
-				E336F6ED1A7068C9009D365F /* Drop.m */,
-				E32ABFF61A70569A0084ABA2 /* GameViewController.h */,
-				E32ABFF71A70569A0084ABA2 /* GameViewController.m */,
-				E32ABFED1A7053960084ABA2 /* Resources */,
 				E32ABFC41A7051520084ABA2 /* AppDelegate.h */,
 				E32ABFC51A7051520084ABA2 /* AppDelegate.m */,
 				E32ABFC71A7051520084ABA2 /* Main_iPhone.storyboard */,
 				E32ABFCA1A7051520084ABA2 /* Main_iPad.storyboard */,
+				E32ABFED1A7053960084ABA2 /* Resources */,
+				E336F6F41A7082F7009D365F /* Drip.h */,
+				E336F6F51A7082F7009D365F /* Drip.m */,
+				E336F6EC1A7068C9009D365F /* Drop.h */,
+				E336F6ED1A7068C9009D365F /* Drop.m */,
+				E336F6F11A7077EA009D365F /* Player.h */,
+				E336F6F21A7077EA009D365F /* Player.m */,
+				E32ABFF61A70569A0084ABA2 /* GameViewController.h */,
+				E32ABFF71A70569A0084ABA2 /* GameViewController.m */,
 				E32ABFCD1A7051520084ABA2 /* ViewController.h */,
 				E32ABFCE1A7051520084ABA2 /* ViewController.m */,
 				E32ABFD01A7051520084ABA2 /* Images.xcassets */,
@@ -191,6 +197,9 @@
 		E32ABFED1A7053960084ABA2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E336F6FB1A70A072009D365F /* cloud.png */,
+				E336F6F91A709CBF009D365F /* ground.png */,
+				E336F6F71A70967D009D365F /* back.png */,
 				E336F6EF1A7072EB009D365F /* drop.png */,
 				E336F6E81A7064C4009D365F /* blocky_right.png */,
 				E336F6E91A7064C4009D365F /* blocky_left.png */,
@@ -277,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E336F6FA1A709CBF009D365F /* ground.png in Resources */,
 				E336F6EB1A7064C4009D365F /* blocky_left.png in Resources */,
 				E32ABFCC1A7051520084ABA2 /* Main_iPad.storyboard in Resources */,
 				E32ABFD11A7051520084ABA2 /* Images.xcassets in Resources */,
@@ -284,7 +294,9 @@
 				E32ABFC01A7051520084ABA2 /* InfoPlist.strings in Resources */,
 				E336F6EA1A7064C4009D365F /* blocky_right.png in Resources */,
 				E336F6F01A7072EB009D365F /* drop.png in Resources */,
+				E336F6F81A70967D009D365F /* back.png in Resources */,
 				E32ABFF51A7053D70084ABA2 /* blocky.png in Resources */,
+				E336F6FC1A70A072009D365F /* cloud.png in Resources */,
 				E32AC0001A705CF00084ABA2 /* left.png in Resources */,
 				E32ABFFE1A705CEA0084ABA2 /* right.png in Resources */,
 			);

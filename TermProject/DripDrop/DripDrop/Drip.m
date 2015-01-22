@@ -14,6 +14,7 @@
     self.xPos = xPos;
     self.yPos = yPos;
     self.gameView = gameView;
+    self.speed = arc4random_uniform(5) + 1;
     
     self.dropImage = [UIImage imageNamed:@"drop.png"];
     self.dropView = [[UIImageView alloc]initWithImage:self.dropImage];

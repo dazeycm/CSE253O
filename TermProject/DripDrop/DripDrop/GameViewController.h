@@ -16,9 +16,11 @@
 @property (strong) UIView *playerView;
 @property (strong) NSTimer *moveTimer;
 @property (strong) NSTimer *intersectTimer;
+@property (strong) NSTimer *scoreTimer;
 @property (strong) Player* player;
 @property (strong) Drop* drop;
 @property int score;
+@property (weak, nonatomic) IBOutlet UILabel *scoreText;
 
 - (IBAction)moveLeft:(id)sender;
 - (IBAction)moveRight:(id)sender;
