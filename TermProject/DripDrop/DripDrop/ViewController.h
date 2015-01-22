@@ -8,8 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <NSURLConnectionDelegate>  {
-    NSMutableData *_responseData;
-}
-
+@interface ViewController : UIViewController 
 @end

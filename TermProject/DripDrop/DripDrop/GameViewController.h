@@ -13,6 +13,7 @@
 #import "Drop.h"
 #import "Drip.h"
 #import "DBManager.h"
+#import "BackgroundChooser.h"
 
 @interface GameViewController : UIViewController
 
@@ -20,6 +21,7 @@
 @property (strong) NSTimer *moveTimer;
 @property (strong) NSTimer *intersectTimer;
 @property (strong) NSTimer *scoreTimer;
+@property  BackgroundChooser* bgChooser;
 @property (strong) Player* player;
 @property (strong) Drop* drop;
 @property int score;

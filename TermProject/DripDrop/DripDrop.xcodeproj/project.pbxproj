@@ -65,7 +65,6 @@
 		E32ABFC51A7051520084ABA2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E32ABFC81A7051520084ABA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		E32ABFCB1A7051520084ABA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		E32ABFCD1A7051520084ABA2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E32ABFCE1A7051520084ABA2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E32ABFD01A7051520084ABA2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E32ABFD61A7051520084ABA2 /* DripDropTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DripDropTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +98,7 @@
 		E370FA821A7190C80093E1DC /* ScoreObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreObject.m; sourceTree = "<group>"; };
 		E370FA841A7195DF0093E1DC /* BackgroundChooser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundChooser.h; sourceTree = "<group>"; };
 		E370FA851A7195DF0093E1DC /* BackgroundChooser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundChooser.m; sourceTree = "<group>"; };
+		E370FA871A71A6F30093E1DC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,7 +181,7 @@
 				E32ABFF71A70569A0084ABA2 /* GameViewController.m */,
 				E3546FFB1A71709700681C93 /* HighScoreController.h */,
 				E3546FFC1A71709700681C93 /* HighScoreController.m */,
-				E32ABFCD1A7051520084ABA2 /* ViewController.h */,
+				E370FA871A71A6F30093E1DC /* ViewController.h */,
 				E32ABFCE1A7051520084ABA2 /* ViewController.m */,
 				E32ABFD01A7051520084ABA2 /* Images.xcassets */,
 				E32ABFBC1A7051520084ABA2 /* Supporting Files */,

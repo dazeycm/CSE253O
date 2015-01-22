@@ -8,9 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BackgroundChooser : NSObject
+@interface BackgroundChooser : NSObject <NSURLConnectionDelegate>  {
+    NSMutableData *_responseData;
+}
+
+@property NSDictionary* derulo;
 @property UIImage* currentImage;
 
--(void) getNewBGImage;
+-(UIImage*) getNewBGImage;
 
 @end
