@@ -12,6 +12,7 @@
 #import "Player.h"
 #import "Drop.h"
 #import "Drip.h"
+#import "DBManager.h"
 
 @interface GameViewController : UIViewController
 
@@ -23,12 +24,17 @@
 @property (strong) Drop* drop;
 @property int score;
 @property (weak, nonatomic) IBOutlet UILabel *scoreText;
+@property (weak, nonatomic) IBOutlet UITextField *userInput;
+@property (weak, nonatomic) IBOutlet UILabel *enterNameTxt;
+@property (weak, nonatomic) IBOutlet UIButton *goToMainMenuButton;
+
 
 - (IBAction)moveLeft:(id)sender;
 - (IBAction)moveRight:(id)sender;
 - (IBAction)TouchRelease:(id)sender;
 
 -(void) intersectCheck;
+-(void) gameOver;
 
 
 @end

@@ -36,7 +36,9 @@
                                                      selector:@selector(incScore)
                                                      userInfo:nil
                                                       repeats:YES];
-
+    self.enterNameTxt.text = @"";
+    self.userInput.hidden = YES;
+    self.goToMainMenuButton.hidden = YES;
 
 }
 
@@ -82,7 +84,8 @@
     for(int i = 0; i < self.drop.drops.count; i++)   {
         Drip* tmpDrop = self.drop.drops[i];
         if(CGRectIntersectsRect(tmpDrop.dropRect, self.player.playerRect))    {
-            [tmpDrop.dropView removeFromSuperview];
+            [self gameOver];
+            
         }
     }
 }
@@ -92,6 +95,38 @@
     self.scoreText.text = [@(self.score) stringValue];
 }
 
+-(void) gameOver    {
+    for(int i = 0; i < self.drop.drops.count; i ++)  {
+        Drip* tmpDrip = self.drop.drops[i];
+        [tmpDrip.dropView removeFromSuperview];
+    }
+    [self.drop killTimers];
+    [self.scoreTimer invalidate];
+    self.scoreTimer = nil;
+    [self.moveTimer invalidate];
+    self.moveTimer = nil;
+    [self.intersectTimer invalidate];
+    self.intersectTimer = nil;
+    [self.player.playerView removeFromSuperview];
+    self.enterNameTxt.text = @"Enter Name:";
+    self.userInput.hidden = NO;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField  {
+    [self.userInput resignFirstResponder];
+    
+    self.userInput.hidden = YES;
+    self.enterNameTxt.hidden = YES;
+    self.goToMainMenuButton.hidden = NO;
+    
+    [[DBManager getSharedInstance] storeName:self.userInput.text andScore:self.score];
+    NSArray* test = [[DBManager getSharedInstance] getTop10Scores];
+    for(int i = 0; i < test.count; i++) {
+        NSLog(@"Name: %@     Score: %@", [test objectAtIndex:i], [test objectAtIndex:i + 1]);
+        i++;
+    }
+    return YES;
+}
 
 
 

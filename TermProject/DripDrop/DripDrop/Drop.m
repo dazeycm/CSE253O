@@ -50,4 +50,9 @@
     }
     
 }
+
+-(void) killTimers {
+    [self.makeDropsTimer invalidate];
+    [self.moveDropsTimer invalidate];
+}
 @end

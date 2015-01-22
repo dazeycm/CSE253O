@@ -18,5 +18,6 @@
 -(Drop*) startDrops: (UIView*) gameView;
 -(void) makeDrop;
 -(void) moveDrops;
+-(void) killTimers;
 
 @end
