@@ -10,4 +10,8 @@
 
 @interface ScoreObject : NSObject
 
+@property NSString *name, *score;
+
+-(void) setScore: (NSString*)name andName: (NSString*)score;
+
 @end
